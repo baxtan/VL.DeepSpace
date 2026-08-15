@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+  <metadata>
+    <id>VL.DeepSpace</id>
+    <version>0.0.1-alpha</version>
+    <title>VL.DeepSpace</title>
+    <authors>vvvv</authors>
+    <projectUrl>https://github.com/vvvv/VL.DeepSpace</projectUrl>
+    <repository type="git" url="https://github.com/vvvv/VL.DeepSpace.git" />
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Starter Kit for the Ars Electronica Deep Space</description>
+    <tags>arselectronica</tags>
+    <license type="expression">LGPL-3.0-only</license>
+    <icon>icon\nugeticon.png</icon>
+    <readme>docs\README.md</readme>
+  </metadata>
+  <files>
+    <file src="..\*.vl" target="" exclude="" />
+    <file src="..\help\**" target="help\" exclude="" />
+    <file src="nugeticon.png" target="icon\" />
+    <file src="..\README.md" target="docs\" />
+  </files>
+</package>

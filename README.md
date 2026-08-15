@@ -1,12 +1,11 @@
-# VL.NewLibrary.Template
+# VL.DeepSpace
 
-- [ ] A clear and concise description of what this package is and does, also what problem it solves.
-- [ ] In case this is a wrapper, links to original code and which version of it is used
-- [ ] In case this is for a device/protocol, links to the device/protocol-specs
-- [ ] Required dependencies/drivers to download and install in the getting started section below
-- [ ] If available, links to documentation (other than helppatches), tutorial videos, blog posts, ...
-- [ ] Note that you can also [include images](https://devblogs.microsoft.com/nuget/add-a-readme-to-your-nuget-package/#markdown-and-image-support)!
-- [ ] Mention any limitations
+A starter kit for developing applications for the Ars Electronica Deep Space
+[Ars Electronica Deep Space](https://ars.electronica.art/solutions/de/deepspace/) with vvvv.
+
+## Features
+- Wall/Floor stereoscopic camera rig
+- Floor tracking 
 
 For use with vvvv, the visual live-programming environment for .NET: http://vvvv.org
 
@@ -21,10 +20,3 @@ For use with vvvv, the visual live-programming environment for .NET: http://vvvv
 - Report issues on [the vvvv forum](https://forum.vvvv.org/c/vvvv-gamma/28)
 - For custom development requests, please [get in touch](mailto:devvvvs@vvvv.org)
 - When making a pull-request, please make sure to read the general [guidelines on contributing to vvvv libraries](https://thegraybook.vvvv.org/reference/extending/contributing.html)
-
-## Credits
-Links to libraries this is based on
-
-## Sponsoring
-Development of this library was partially sponsored by:  
-* 

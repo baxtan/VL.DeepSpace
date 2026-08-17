@@ -617,6 +617,23 @@
               <Pin Id="Vsp2TER6e3BLLI07TQTgxP" Name="Input 2" Kind="InputPin" />
               <Pin Id="B96pwpE8U2lLU9vJ0yuLW9" Name="Output" Kind="OutputPin" />
             </Node>
+            <Node Bounds="75,560,155,26" Id="TCKIS4KCvKNMF4GFFCvjau">
+              <p:NodeReference LastCategoryFullName="Microsoft.Extensions.Configuration.CommandLineConfigurationExtensions" LastDependency="Microsoft.Extensions.Configuration.CommandLine.dll" OverloadStrategy="AllPinsThatAreNotCommon">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="AddCommandLine" />
+                <PinReference Kind="InputPin" Name="Args" />
+              </p:NodeReference>
+              <Pin Id="UqfRhpUH8XWLNxd6ADZdbd" Name="Input" Kind="StateInputPin" />
+              <Pin Id="KQEOMtfgIDcPCO0sHl5XjU" Name="Args" Kind="InputPin" />
+              <Pin Id="RqhPHlIUZeZOfd6BCVNVsV" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="225,510,118,19" Id="MX7BmlSrwJzPuJRdtp3AjO">
+              <p:NodeReference LastCategoryFullName="System.Environment" LastDependency="System.Runtime.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="GetCommandLineArgs" />
+              </p:NodeReference>
+              <Pin Id="FK1tCTgtlvfMwJcmnMQ2vC" Name="Result" Kind="OutputPin" />
+            </Node>
           </Canvas>
           <ProcessDefinition Id="G6vubs5c1jIMeUk1D1XuT7" IsHidden="true">
             <Fragment Id="KEHjBlAsdhWN5AZcYwPyb5" Patch="KPpFFy7eyiIOh8iBR1NJGl" Enabled="true" />
@@ -638,6 +655,8 @@
           <Link Id="BfuDFY61hMrLkPQTcC5CVc" Ids="HaRE3JKRLvENye4ifemAmD,G77lIH8KP5tNUeNmA0BYvy" />
           <Link Id="BKCq8bgPsaoQRw22uLvhe2" Ids="BdjgDR1iEJoMfu18gHWD8R,Vsp2TER6e3BLLI07TQTgxP" />
           <Link Id="IeObfmg1axqPvt7leBwSe0" Ids="B96pwpE8U2lLU9vJ0yuLW9,QBVBEA2TFtALuyKcujy8YL" />
+          <Link Id="QDzSqw8tNiBNKP03YufJEr" Ids="FnLOrkjxrLJLEt7FZUZUJI,UqfRhpUH8XWLNxd6ADZdbd" />
+          <Link Id="ENAtaKsRacZOcW4Byl4EKo" Ids="FK1tCTgtlvfMwJcmnMQ2vC,KQEOMtfgIDcPCO0sHl5XjU" />
         </Patch>
       </Node>
       <!--
@@ -1323,4 +1342,6 @@
   <NugetDependency Id="D1Qc6AKwzULOdtisEEEqST" Location="Microsoft.Extensions.Configuration.Json" />
   <NugetDependency Id="EhjA80vGezzMtZSYuScyJd" Location="VL.Stride" />
   <NugetDependency Id="K6sBHZDFxmuNXCzT5hK1es" Location="VL.IO.TUIO" Version="1.1.0" />
+  <NugetDependency Id="P6rJEvdwPyANlVPcPIuK5e" Location="Microsoft.Extensions.Configuration.CommandLine" />
+  <PlatformDependency Id="LSFwtbpiNbjLrbzRGHqhRG" Location="System.Runtime" />
 </Document>

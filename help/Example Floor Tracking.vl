@@ -122,6 +122,7 @@
                     <Choice Kind="ProcessNode" Name="Pong" />
                   </p:NodeReference>
                   <Pin Id="QLT8xyRUkJbPwLXqbBFmDT" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                  <Pin Id="MzH6vjTJo3VOdTSfPCvUIS" Name="Reset" Kind="InputPin" />
                   <Pin Id="CflMgkkUakKMwr6vLpPrJv" Name="Positions" Kind="InputPin" />
                   <Pin Id="MUywAp5tioCLLDqpV7be4H" Name="Ball Position" Kind="OutputPin" />
                   <Pin Id="EY9XekoFBSWLclhhBAXq4D" Name="Paddles" Kind="OutputPin" />
@@ -381,6 +382,7 @@
               <Pin Id="NgIgBKGkp7YOLnlkahayZm" Name="Value" Kind="OutputPin" />
               <Pin Id="RTkX2zZED6aMSEj21OhpSc" Name="Node Context" Kind="InputPin" IsHidden="true" />
             </Node>
+            <ControlPoint Id="RHBGuX1vL0POj2PvPdehjX" Bounds="324,20" />
           </Canvas>
           <Link Id="UqiWNGGVgz7LCANoistuzo" Ids="OKJVn3yO2N8NXOVriVRlY9,RdIDjN6k1R6Lya5JYpEGda" IsFeedback="true" />
           <Link Id="CVFcPZzY2qvOxbj79HpdEV" Ids="VugE9AY9nHhLDfgDudf8ZH,RjN4IwVoDl1QKsn6jiX1BW" IsHidden="true" />
@@ -388,6 +390,7 @@
           <Patch Id="A2OmQ4siMF5N5ZWib3Kc7Y" Name="Create" />
           <Patch Id="K1QN1S9vggzOuIQcHCw696" Name="Update">
             <Pin Id="RjN4IwVoDl1QKsn6jiX1BW" Name="Output" Kind="OutputPin" />
+            <Pin Id="UoV6h9gZXt0M6hutu8fIZt" Name="Reset" Kind="InputPin" />
           </Patch>
           <ProcessDefinition Id="Oh4Iqqilt7QQFvtaLJrSEQ">
             <Fragment Id="IYkmsyy8eoaPuAiSX0fNiD" Patch="A2OmQ4siMF5N5ZWib3Kc7Y" Enabled="true" />
@@ -435,6 +438,8 @@
           <Link Id="PQcMfK8oGybOOAWc6hYmmN" Ids="SOEl6lP50QRPao2e70JB4v,KLW23XweOAfL6jpJhcW9Mm" />
           <Link Id="EoYuGsMW3FpOdOzEGSdQoA" Ids="KLW23XweOAfL6jpJhcW9Mm,M70yHsMpJ7hNGvdowZvZaC" />
           <Link Id="GoEISUtFBjnQVJJago6Abh" Ids="NiosZus7iBUQFhJyhubkD1,T4Ry3ZBWi0uLmVTSKg8oGF" />
+          <Link Id="QPrz5ohpsU3M6sppcz69mJ" Ids="RHBGuX1vL0POj2PvPdehjX,MzH6vjTJo3VOdTSfPCvUIS" />
+          <Link Id="LkbdBUS4WaIMWGhzR81S5i" Ids="UoV6h9gZXt0M6hutu8fIZt,RHBGuX1vL0POj2PvPdehjX" IsHidden="true" />
         </Patch>
       </Node>
     </Canvas>
@@ -522,11 +527,11 @@
             <Pin Id="F3lcNSOXna9PhGUru4JKIm" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="MtuCqCdbVf8Ph0ietj4tfj" Name="Camera Transformation" Kind="InputPin" />
             <Pin Id="IZnKwCQ0eftM23DvlLohwW" Name="Sweet Spot" Kind="InputPin" />
-            <Pin Id="SckJoblO6u1O6M59mCffe7" Name="Eye Separation" Kind="InputPin" />
             <Pin Id="SKldNCDKhitOuZm8GiBcMq" Name="Near Plane" Kind="InputPin" />
             <Pin Id="CKG81D2hFxbONhFAsS6bAX" Name="Debug" Kind="InputPin" />
             <Pin Id="SEpmmVrFtqDLGLhHgtwgbk" Name="Camera Left" Kind="OutputPin" />
             <Pin Id="D0VEAJbps21Ni8xfr8BiVv" Name="Camera Right" Kind="OutputPin" />
+            <Pin Id="SckJoblO6u1O6M59mCffe7" Name="Eye Separation" Kind="InputPin" />
           </Node>
           <Pad Id="DFeYcPCyPu6M5hsmUiDoHq" Comment="Near Plane" Bounds="385,421,35,15" ShowValueBox="true" isIOBox="true" Value="0">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
@@ -546,12 +551,13 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="625,600,75,19" Id="NbsQy0aIL0oPfV07P7M0hs">
+          <Node Bounds="706,600,75,19" Id="NbsQy0aIL0oPfV07P7M0hs">
             <p:NodeReference LastCategoryFullName="Main" LastDependency="DeepSpace.vl">
               <Choice Kind="ProcessNode" Name="FloorContent" />
             </p:NodeReference>
             <Pin Id="EXdeyDYyQQTOXzPpgzrshs" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="GMgYcfsrYWJNSJ2oHmbGHn" Name="Output" Kind="OutputPin" />
+            <Pin Id="Nt8t5Bydgo5MqFlGG3fF8H" Name="Reset" Kind="InputPin" />
           </Node>
           <Node Bounds="563,810,110,19" Id="FfedO0FuhmwPrlt2OKIFF1">
             <p:NodeReference LastCategoryFullName="Stride.VirtualReality" LastDependency="VL.Stride.vl">
@@ -753,6 +759,32 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
+          <Node Bounds="706,550,80,19" Id="GFgWBGjkCjyMdWgLkwMR48">
+            <p:NodeReference LastCategoryFullName="Application" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="PublicChannel" />
+            </p:NodeReference>
+            <Pin Id="Do89PTq3edIMcFcM97yQLD" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="TjoLpF4RiTJOAh3XuNhjQL" Name="Path" Kind="InputPin" />
+            <Pin Id="Gtqq8ZwWjCOPstOkfGPnob" Name="Value" Kind="InputPin" />
+            <Pin Id="Ncf1DbxvaSTL4mrCxtTq5D" Name="Path" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="K2DOjwLuCmFNp1jtx45plW" Name="Output" Kind="OutputPin" />
+            <Pin Id="DbyafnRmhxgLzE6hQfevRV" Name="Value" Kind="OutputPin" />
+            <Pin Id="MOqfJpzN1ZCQWlZ1COwz6k" Name="Author" Kind="InputPin" IsHidden="true" />
+          </Node>
+          <Pad Id="VonXIB9yK7wN5a327MaUZh" Comment="Path" Bounds="708,510,54,15" ShowValueBox="true" isIOBox="true" Value="Reset">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="PPycYtAouSaMW35gO03M2V" Comment="Init Ball" Bounds="842,510,35,35" ShowValueBox="true" isIOBox="true" Value="false">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
         </Canvas>
         <Patch Id="SFRj6910O1pLJrfDM4uwNF" Name="Create" />
         <Patch Id="GobvhesWbDZMsfnYvfQudY" Name="Update" />
@@ -788,6 +820,9 @@
         <Link Id="L24LYZJ2gzpNOQACvtvbnf" Ids="RHBoHrTFshzNt1rJ7fcgQ8,MtuCqCdbVf8Ph0ietj4tfj" />
         <Link Id="R4HdW1zwpz0LbJmmrgrs1Z" Ids="OyQobrwdTviMbAznnDDZZ6,MLwnY8d4LtlOBan70uQHfR" />
         <Link Id="Rmeai1Hdw2EQJJfxmHH2Ap" Ids="IQxjI3jlECTOCUO0ynZpcG,BLv3he5YVpwP2nfTaBNXRg" />
+        <Link Id="SaivdmRSU3pLh15pzjfK5k" Ids="VonXIB9yK7wN5a327MaUZh,TjoLpF4RiTJOAh3XuNhjQL" />
+        <Link Id="Fl26gFcn1WyMc5FMJcS3gD" Ids="PPycYtAouSaMW35gO03M2V,Gtqq8ZwWjCOPstOkfGPnob" />
+        <Link Id="V5nSInag6XQL6LP9qNO68S" Ids="DbyafnRmhxgLzE6hQfevRV,Nt8t5Bydgo5MqFlGG3fF8H" />
       </Patch>
     </Node>
   </Patch>

@@ -824,7 +824,7 @@
               <Pin Id="LClEpfsqrshP3aSqt2RSIV" Name="Input 2" Kind="InputPin" />
               <Pin Id="BGobJkwTN7fQb6yYUIc4wO" Name="Output" Kind="OutputPin" />
             </Node>
-            <Pad Id="UM9sKNfdRdPMXcLYV29DAZ" Bounds="506,190,35,35" ShowValueBox="true" isIOBox="true">
+            <Pad Id="UM9sKNfdRdPMXcLYV29DAZ" Bounds="618,71,35,35" ShowValueBox="true" isIOBox="true" Value="False">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               </p:TypeAnnotation>
@@ -837,29 +837,6 @@
                 <Choice Kind="TypeFlag" Name="Vector2" />
               </p:TypeAnnotation>
             </Pad>
-            <Node Bounds="458,150,55,19" Id="MK4kUs47fbaQCymVk28C1D">
-              <p:NodeReference LastCategoryFullName="Graphics.Skia.IO.Keyboard" LastDependency="VL.Skia.vl">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="ProcessAppFlag" Name="KeyBang" />
-              </p:NodeReference>
-              <Pin Id="Ca3iI0aebn4OPVz1JlQZ9R" Name="Node Context" Kind="InputPin" IsHidden="true" />
-              <Pin Id="FHAPFlJNEYaLM12MDjIYE1" Name="Keyboard Device" Kind="InputPin" />
-              <Pin Id="MnhUFK2D9Y0Oo3yIONbEnl" Name="Key" Kind="InputPin" DefaultValue="Space" />
-              <Pin Id="Mk7Q8g5dEvtP6SrNUr7yRH" Name="Result" Kind="OutputPin" />
-            </Node>
-            <Node Bounds="421,120,59,19" Id="FoLh4Izs0NEP6dzuF76VuM">
-              <p:NodeReference LastCategoryFullName="Graphics.Skia.IO" LastDependency="VL.Skia.vl">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <CategoryReference Kind="Category" Name="IO" NeedsToBeDirectParent="true">
-                  <p:OuterCategoryReference Kind="Category" Name="Skia" NeedsToBeDirectParent="true" />
-                </CategoryReference>
-                <Choice Kind="ProcessAppFlag" Name="Keyboard" />
-              </p:NodeReference>
-              <Pin Id="KWwHcZFt8dMMLeKnp5CBQr" Name="Context" Kind="OutputPin" />
-              <Pin Id="KeYpcNjqXVRMuq522AOiQ3" Name="Keyboard" Kind="OutputPin" />
-              <Pin Id="S6dcp6ca3SjL3IRIsiD34q" Name="Pressed Keys" Kind="OutputPin" />
-              <Pin Id="I1YELlHTX9wPgkJ5NYqEXs" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            </Node>
             <Node Bounds="688,250,45,19" Id="R3F8UkEf0wTMVLeEfSTWP0">
               <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -1041,6 +1018,7 @@
             <ControlPoint Id="VFUC1Gg9shBPVlQW5nUX5S" Bounds="976,200" />
             <ControlPoint Id="DYbHdEin7ZjMHkAWv8CcRb" Bounds="471,910" />
             <ControlPoint Id="IItDaKku9kKQPpMT5jbsSg" Bounds="834,610" />
+            <ControlPoint Id="NMl40VpBIqQNQ2feTtIXEy" Bounds="618,30" />
           </Canvas>
           <Link Id="K3YU4bLjT46L6fAmOxMF4W" Ids="PyG1IDF14jkNP7gsYYDVfP,OpHrRXJoeffPkOH4s1RFgl" />
           <Link Id="A0AAgtf6KjsMIQSuiM1Vuz" Ids="Ni1kv2PRmmPNZgTGBGkl1L,QbqtEFw8hwoNQyL8GmhHa9" />
@@ -1061,8 +1039,6 @@
           <Link Id="H5qfvRSuXMsNezlSL6fYl1" Ids="BGobJkwTN7fQb6yYUIc4wO,DHQvs0qEG4hLiH9vNuBnRJ" />
           <Link Id="PayLrSPSSCeNMULW7IddM7" Ids="UM9sKNfdRdPMXcLYV29DAZ,ANn0RzfyJo4LJl0cD6rpKG" />
           <Link Id="RJtyehiZ5CrOLylYcxtFlT" Ids="GJfh50Ju2txQNcwXMbcEvw,LClEpfsqrshP3aSqt2RSIV" />
-          <Link Id="BBoxNdbabszMgDCL9EUUYa" Ids="KeYpcNjqXVRMuq522AOiQ3,FHAPFlJNEYaLM12MDjIYE1" />
-          <Link Id="CJVrLtHaDpVQTPfzwCafKa" Ids="Mk7Q8g5dEvtP6SrNUr7yRH,UM9sKNfdRdPMXcLYV29DAZ" />
           <Link Id="SonGBkBd2COPYsjoYTZx3Z" Ids="RBivdsWVh0uLIrFANrHC8n,M9lJZNq9Gu2PC4gfGroSay" />
           <Link Id="VJU6CEkWLvnLpMB2ghySUE" Ids="TCgcx8P7z4MLSgFlMVOVyU,BJuT1PFiuvVOIffnL9SzHC" />
           <Link Id="GxJ5lQxpNvrLs0S85C73yX" Ids="TCgcx8P7z4MLSgFlMVOVyU,OkDjS3N9wjMNNy0dcitJU0" />
@@ -1091,14 +1067,14 @@
           <Link Id="IZ4UmvwgIvsQc2uF86ObRW" Ids="EaUy6shApGYM1Nv49qNBLn,UGoTTFT2RL9OORaa9pCNpb" />
           <Link Id="KWYlg2Jzj93QUOySQuWECK" Ids="QbqtEFw8hwoNQyL8GmhHa9,K0e6cAxGLA5PSaFtTaRWEb" />
           <Link Id="Dgcw85uJPz8ObEH6skEDIw" Ids="KpLKRhSgRLeOQ4w5O3mo0V,G0Zi5BF79f9OZlTkXWk6SE" />
-          <Link Id="JwAOeBOQno2NQxdB5ZRJLz" Ids="Mk7Q8g5dEvtP6SrNUr7yRH,BtqLOa4cOsGMSDBRQbsqx7" />
           <Link Id="OYON0V5N3aSLXU7WkiViIe" Ids="BtqLOa4cOsGMSDBRQbsqx7,VWXwDvEQFz5PyS4bnauaXd" />
           <Link Id="HjGIi2thMfILMTqxvCBVDa" Ids="KpLKRhSgRLeOQ4w5O3mo0V,M3RLRbLQaWDLciZ1Ts8TBJ" />
           <Link Id="CM2jxTolXVhQVXI0IWsfFz" Ids="PGlVQF0TNOiPHYZ9ssACPV,F16poQnHWVgLnZuDLSlNIu" />
           <Link Id="HvUzAgxuuKDMmhpUbdh15R" Ids="PMyc1x1cH4MP4akQdTYcHr,BtTw5BHwVDmOMJuC0SINUt" />
           <Link Id="VXGTlds77BWMUXmpEbBUaP" Ids="CWnm7BwpBIDMylu9xfvUzh,EfA6hondxf0L35XNgkt1z8" />
           <Patch Id="RsseLxtvHdoPvibTnjCIct" Name="Create" />
-          <Patch Id="FbQ0XhvWx8YPoQGndCVGZr" Name="Update" ParticipatingElements="IMFzztpfXsGQAHVPCzjDun">
+          <Patch Id="FbQ0XhvWx8YPoQGndCVGZr" Name="Update" ParticipatingElements="IMFzztpfXsGQAHVPCzjDun,HlJE3iZaULKPuEbrFSK46D">
+            <Pin Id="NaaH2P3PwagLnZRPAE3lIj" Name="Reset" Kind="InputPin" />
             <Pin Id="LkmKQZSkYlNQCnBknrx3jO" Name="Positions" Kind="InputPin" />
             <Pin Id="AP3ZeK99V7JQVBng5h3bom" Name="Ball Position" Kind="OutputPin" />
             <Pin Id="OZnEgek42TdOhaGm5mH025" Name="Paddles" Kind="OutputPin" />
@@ -1120,6 +1096,9 @@
           <Link Id="Sown7nIynFkLcivRuAj9qI" Ids="BnEeJYayF1MMX2adP3ZIsb,TIxN71dIQcQMmkbCaajMCI" />
           <Link Id="FnWJpoBhVEsMM8GC9vWE0z" Ids="TIxN71dIQcQMmkbCaajMCI,IItDaKku9kKQPpMT5jbsSg" />
           <Link Id="LOyjli12MIMMMRtsgJk8m0" Ids="IItDaKku9kKQPpMT5jbsSg,OZnEgek42TdOhaGm5mH025" IsHidden="true" />
+          <Link Id="HlJE3iZaULKPuEbrFSK46D" Ids="UM9sKNfdRdPMXcLYV29DAZ,BtqLOa4cOsGMSDBRQbsqx7" />
+          <Link Id="KrQul6WMFZfMeppkJuiWdH" Ids="NMl40VpBIqQNQ2feTtIXEy,UM9sKNfdRdPMXcLYV29DAZ" />
+          <Link Id="Nq5yytZ7IjdPJONUyskALu" Ids="NaaH2P3PwagLnZRPAE3lIj,NMl40VpBIqQNQ2feTtIXEy" IsHidden="true" />
         </Patch>
       </Node>
     </Canvas>

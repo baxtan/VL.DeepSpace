@@ -9,12 +9,14 @@ A starter kit for developing applications for the Ars Electronica Deep Space
 
 For use with vvvv, the visual live-programming environment for .NET: http://vvvv.org
 
+## Requirements
+
+- [vvvv gamma 8.0 preview](https://vvvv.org/download/) 
+
 ## Getting started
-- Install as [described here](https://thegraybook.vvvv.org/reference/hde/managing-nugets.html) via commandline:
-
-    `nuget install VL.NewLibrary.Template -pre`
-
-- Usage examples and more information are included in the pack and can be found via the [Help Browser](https://thegraybook.vvvv.org/reference/hde/findinghelp.html)
+- In the [Help Browser](https://thegraybook.vvvv.org/reference/hde/findinghelp.html) search for "VL.DeepSpace" and click the download icon
+- When downloaded, check out the examples coming with the pack
+- Save the examples in your local work folder to modify them
 
 ## Contributing
 - Report issues on [the vvvv forum](https://forum.vvvv.org/c/vvvv-gamma/28)

@@ -5,8 +5,11 @@
     <Nullable>enable</Nullable>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
   </PropertyGroup>
+  <PropertyGroup>
+    <RestoreAdditionalProjectSources>C:\Users\joreg\Documents\repos\vvvv\VL.StandardLibs\..\bin\packages\</RestoreAdditionalProjectSources>
+  </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="VL.Core" Version="2026.8.0-0105-ge121c15646" />
+    <PackageReference Include="VL.Core" Version="2026.8.0-0116-g7d7411c8e4" />
   </ItemGroup>
   <ItemGroup>
     <Using Include="VL.Core" />

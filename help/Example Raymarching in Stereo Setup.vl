@@ -1599,8 +1599,7 @@
     </Node>
   </Patch>
   <NugetDependency Id="HkvvVGVNhHvNgQf0shJM52" Location="VL.Stride" />
-  <NugetDependency Id="UzgDLDANGHNLa3MMttkQPt" Location="VL.HelpAssets" />
-  <NugetDependency Id="SFoBa0gwCyiOybsfUiDs3Y" Location="VL.DeepSpace" Version="0.0.5-alpha" />
+  <NugetDependency Id="SFoBa0gwCyiOybsfUiDs3Y" Location="VL.DeepSpace" />
   <NugetDependency Id="LG6Lfm2cJZaQaDz7TKnnat" Location="VL.IO.OSC" Version="2.0.9" />
   <NugetDependency Id="E7AlD0X4VjLLb5cEb5DKy7" Location="VL.Fuse" Version="1.0.3-beta08" />
   <NugetDependency Id="PZ174vVQ1MeOLuS0BaXG9a" Location="VL.Stride.TextureFX" />

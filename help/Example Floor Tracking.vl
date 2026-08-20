@@ -886,7 +886,6 @@
     </Node>
   </Patch>
   <NugetDependency Id="HkvvVGVNhHvNgQf0shJM52" Location="VL.Stride" />
-  <NugetDependency Id="UzgDLDANGHNLa3MMttkQPt" Location="VL.HelpAssets" />
   <NugetDependency Id="SFoBa0gwCyiOybsfUiDs3Y" Location="VL.DeepSpace" />
   <NugetDependency Id="LG6Lfm2cJZaQaDz7TKnnat" Location="VL.IO.OSC" Version="2.0.9" />
   <DocumentDependency Id="IpCprmjlNKlNf3OuyqZekr" Location="./Pong3.vl" />
